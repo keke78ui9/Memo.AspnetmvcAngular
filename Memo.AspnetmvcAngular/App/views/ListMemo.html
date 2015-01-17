@@ -1,0 +1,20 @@
+﻿<div ng-controller="ListCtrl">
+    <h2>{{message}}</h2>
+
+    <md-list>
+        <md-item ng-repeat="item in memos">
+            <md-item-content>
+                <div class="md-tile-left">
+                
+                </div>
+                <div class="md-tile-content">
+                    <h3>{{item.Id}}</h3>
+                    <h4>{{item.CreatedDate}}</h4>
+                    <p>
+                        {{item.MemoText}}
+                    </p>
+                </div>
+            </md-item-content>
+        </md-item>
+    </md-list>
+</div>
